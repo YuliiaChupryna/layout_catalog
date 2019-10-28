@@ -1,15 +1,10 @@
 .catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1124px;
-  padding: 50px 40px;
-  margin: 0 auto; }
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 50px 48px; }
 
 .product {
   display: -webkit-box;
@@ -26,10 +21,7 @@
   background: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 30px 14px 15px;
-  margin: 0 48px 50px 0; }
-  .product:nth-of-type(4), .product:last-of-type {
-    margin-right: 0; }
+  padding: 30px 14px 15px; }
   .product__picture {
     display: block;
     width: 160px;
